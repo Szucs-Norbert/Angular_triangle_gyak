@@ -1,0 +1,22 @@
+<h1>Háromszög</h1>
+
+
+
+<form [formGroup]="triangForm">
+  <label for="alap">Alap</label>
+  <input id="alap" formControlName="alap">
+  
+  <br>
+  <label for="magassag">Magasság</label>
+  <input id="magassag" formControlName="magassag">
+  
+  
+  <br>
+  <button (click)="onClickSzamit()">Számol</button>
+  
+  
+  <div *ngIf="teruletVisible">
+    <label>Terület</label>
+    <input formControlName="terulet">
+  </div>
+</form>
